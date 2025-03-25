@@ -40,7 +40,7 @@ app.post("/post-to-composer", async (req, res) => {
     await page.waitForNavigation({ waitUntil: "networkidle2" });
 
     const url = page.url();
-    const match = url.match(/analytics\\/([a-zA-Z0-9]+)/);
+    const match = url.match(/analytics\/([a-zA-Z0-9]+)/);
     if (!match) throw new Error("Не удалось извлечь account_id");
     const accountId = match[1];
     console.log("📎 Найден account_id:", accountId);
