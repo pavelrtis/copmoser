@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: x-composer-backend
+    env: node
+    plan: free
+    buildCommand: yarn install
+    startCommand: yarn start
+    envVars:
+      - key: PUPPETEER_SKIP_CHROMIUM_DOWNLOAD
+        value: true
