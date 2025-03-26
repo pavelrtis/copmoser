@@ -1,20 +1,17 @@
 {
-  "name": "x-composer-poster",
+  "name": "x-composer-backend",
   "version": "1.0.0",
-  "license": "MIT",
   "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "start": "node index.js"
   },
-  "engines": {
-    "node": ">=18.0.0",
-    "npm": ">=9.0.0"
-  },
   "dependencies": {
     "express": "^4.18.2",
-    "puppeteer": "^22.8.2",
-    "body-parser": "^1.20.2",
-    "dotenv": "^16.3.1",
-    "node-fetch": "^2.6.7"
+    "puppeteer": "^21.3.8",
+    "body-parser": "^1.20.2"
   }
 }
